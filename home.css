@@ -1,0 +1,17 @@
+body { 
+  background-color: #FCFAF2;
+}
+
+#header {
+  padding: 150px 0;
+}
+
+.header-text {
+  margin: 0 auto;
+  padding: 0 20px;
+  position: relative;
+  width: 860px;
+  font: normal 13px/54px 'pt mono';
+  color: #222;
+  letter-spacing: 5px;
+}
