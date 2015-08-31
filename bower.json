@@ -5,5 +5,9 @@
     "**/.*",
     "node_modules",
     "components"
-  ]
+  ],
+  "dependencies": {
+    "jquery": "~2.1.4",
+    "jquery.typist": "~0.0.7"
+  }
 }
