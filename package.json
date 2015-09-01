@@ -6,6 +6,7 @@
     "start": "node app.js",
     "postinstall": "bower install"
   },
+  "cacheDirectories": ["node_modules", "public/components"],
   "dependencies": {
     "body-parser": "^1.13.3",
     "bower": "^1.5.2",
