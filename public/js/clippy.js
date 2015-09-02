@@ -162,8 +162,8 @@ clippy.Agent.prototype = {
     }
 
     if (this._el.css('top') === 'auto' || !this._el.css('left') === 'auto') {
-      var left = $(window).width() * 0.8;
-      var top = ($(window).height() + $(document).scrollTop()) * 0.8;
+      var left = $(window).width() * 0.5;
+      var top = ($(window).height() + $(document).scrollTop()) * 0.5;
       this._el.css({top:top, left:left});
     }
 
@@ -844,7 +844,7 @@ clippy.Balloon.prototype = {
 
 };
 
-clippy.BASE_PATH = './agents/';
+clippy.BASE_PATH = '/js/agents/';
 
 clippy.load = function (name, successCb, failCb) {
   var path = clippy.BASE_PATH + name;
