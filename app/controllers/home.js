@@ -1,5 +1,6 @@
 var express = require('express'),
-  router = express.Router();
+  router = express.Router(),
+  Markov = require('../models/markov');
 
 module.exports = function (app) {
   app.use('/', router);
@@ -7,6 +8,7 @@ module.exports = function (app) {
 
 router.get('/', function (req, res, next) {
   res.render('home', {
-    title: 'Clippy'
+    title: 'Clippy',
+    markov: new Markov()
   });
 });
